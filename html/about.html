@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>关于我们</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../font/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/pagination.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../css/pagination.rewrite.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</head>
+
+	<body>
+		<div class='page news_page about_page'>
+			<!-- header -->
+			<header class='page_header'>
+				<div class='header_content'>
+					<div class='logo'>
+						<img src="../img/logo.png" alt="">
+					</div>
+					<nav class="navbar">
+						<ul>
+							<li class='active'>
+								<a href="#">首页</a>
+							</li>
+							<li>
+								<a href="#">网页设计</a>
+							</li>
+							<li>
+								<a href="#">APP开发</a>
+							</li>
+							<li>
+								<a href="#">管理系统</a>
+							</li>
+							<li>
+								<a href="#">对三方嵌入</a>
+							</li>
+							<li>
+								<a href="#">关于我们</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div class='banner'>
+				<div class='banner_inner'>
+					<p>ABOUT US</p>
+					<img src="../img/about/1.png" alt="">
+				</div>
+			</div>
+			<!-- content -->
+			<div class='body_content'>
+				<div class='part part1 box_shadow'>
+					<div class='left'>
+						<p class='title'>南京XX网络科技有限公司</p>
+						<p class='desc'>是位于中国南京的致力于互联网解决方案提供商，致力于为企业提供“互联网+”模式的经营、生产、制造、销售一站式服务。通过帮助企业以互联网、电子商务等手段进行产业升级、企业透过服务，实现商业、服务与制造业共融的生态圈，为企业创造新的商业机会。</p>
+					</div>
+					<div class='right'>
+						<img src="../img/about/2.jpg" alt="">
+					</div>
+				</div>
+				<div class='part part2 box_shadow'>
+					<p>我们能为客户做什么</p>
+					<img src="../img/about/3.png" alt="">
+				</div>
+				<div class='part part3 box_shadow'>
+					<p class='desc_item'>
+						<img src="../img/about/4.png" alt="">
+						<span>江苏省南京市栖霞区迈皋桥创业园科技研发基地寅春路18号</span>
+					</p>
+					<p class='desc_item'>
+						<img src="../img/about/5.png" alt="">
+						<span>025-1234567</span>
+					</p>
+					<p class='desc_item'>
+						<img src="../img/about/6.png" alt="">
+						<span>周一 ~ 周五 09:00~18:00</span>
+					</p>
+
+					<div class='location'>
+						<img src="../img/about/7.png" alt="">
+					</div>
+					
+				</div>
+			</div>
+			<!-- footer -->
+			<footer>
+				<div class='footer_content'>
+					<div class='row'>
+						<div class='col-xs-3 footer_item'>
+							<p class='footer_title'>联系我们</p>
+							<div class='footer_text_box'>
+								<p>电话：025-61111111</p>
+								<p>邮箱：support@123.com</p>
+								<p>工作时间：</p>
+								<p>周一 ~ 周五</p>
+								<p>9:00AM~6:00PM</p>
+							</div>
+						</div>
+						<div class='col-xs-3 footer_item'>
+							<p class='footer_title'>提供的服务</p>
+							<div class='footer_text_box'>
+								<p>网页设计</p>
+								<p>APP开发</p>
+								<p>管理系统</p>
+								<p>第三方平台接入</p>
+								<p>其他定制开发</p>
+							</div>
+						</div>
+						<div class='col-xs-3 footer_item'>
+							<p class='footer_title'>联系我们</p>
+							<div class='footer_text_box'>
+								<img class='weixin_code' src="../img/test1.jpeg" alt="">
+							</div>
+						</div>
+						<div class='col-xs-3 footer_item'>
+							<p class='footer_title'>联系我们</p>
+							<div class='footer_text_box'>
+								<div class='share_icon'>
+									<a href="">
+										<i class='fa fa-weibo'></i>
+									</a>
+								</div>
+								<div class='share_icon'>
+									<a href="">
+										<i class='fa fa-qq'></i>
+									</a>
+								</div>
+								<div class='share_icon'>
+									<a href="">
+										<i class='fa fa-weixin'></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class='align_center' style='margin-top: 10px;'>
+						<a href="">苏ICP备1707号-1</a>
+						<a href="" style='margin-left: 50px;'>苏公网安备 32011302320509号</a>
+					</p>
+					<p class='align_center' style='margin-top: 10px;'>Copyright © 2017-2018 123456.com , All Rights Reserved. 南京小火苗网络科技有限公司 版权所有</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/jquery.twbsPagination.min.js"></script>
+	<script type="text/javascript">
+	$('#pagination').twbsPagination({
+		first: '',
+		last: '',
+		prev: '',
+		next: '',
+		totalPages: 35,
+		visiblePages: 7,
+		startPage: 3,
+		onPageClick: function(evt, page) {
+			console.log('当前点击页码为：' + page + '页；');
+		}
+	});
+	</script>
+
+</html>
